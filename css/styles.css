@@ -3551,7 +3551,7 @@ img.u-pull-left {
 .services-list {
     max-width: 1080px;
     margin-top: var(--vspace-2_5);
-    color: white;
+    color: rgb(0, 67, 54);
 }
 
 .services-list .column:nth-child(2n+1) {
@@ -3569,7 +3569,8 @@ img.u-pull-left {
 
 .service-item h3 {
     margin-top: 0;
-    color: white;
+    color: rgb(0, 67, 54);
+    ;
 }
 
 .service-icon-block {
