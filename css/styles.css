@@ -1811,7 +1811,7 @@ img,
 #preloader img {
     width: 300px;
     /* adjust size as needed */
-    animation: pulse 3s infinite;
+    animation: pulse 1.5s infinite;
 }
 
 @keyframes pulse {
