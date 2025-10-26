@@ -2945,6 +2945,7 @@ img.u-pull-left {
 .s-header__nav-wrap {
     justify-content: center;
     align-items: flex-start;
+    border-bottom: 1px solid rgba(0, 255, 204, 0.77);
 }
 
 .s-header__nav a {
@@ -2961,12 +2962,14 @@ img.u-pull-left {
 
 .s-header__nav a:focus,
 .s-header__nav a:hover {
-    color: white;
+    color: rgba(0, 255, 204, 0.77);
 }
 
 .s-header__nav .current a {
     background-color: var(--color-gray-9);
     color: var(--color-white);
+    border-left: 1px solid rgba(0, 255, 204, 0.77);
+    border-right: 1px solid rgba(0, 255, 204, 0.77);
 }
 
 .s-header__nav ul {
