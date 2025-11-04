@@ -5,7 +5,27 @@
 (function(html) {
 
     'use strict';
+    
+    // Initialize all functions when DOM is ready
+    document.addEventListener('DOMContentLoaded', function() {
+        ssBackToTop();
+    });
 
+
+    /* Back to Top
+     * -------------------------------------------------- */
+    const ssBackToTop = function() {
+        const goTopButton = document.querySelector('.ss-go-top');
+
+        // Show or hide the button based on scroll position
+        window.addEventListener('scroll', function() {
+            if (window.scrollY >= 800) {
+                goTopButton.classList.add('link-is-visible');
+            } else {
+                goTopButton.classList.remove('link-is-visible');
+            }
+        });
+    };
 
     /* animations
      * -------------------------------------------------- */
