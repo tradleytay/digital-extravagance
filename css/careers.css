@@ -19,7 +19,7 @@
 }
 
 .s-careers {
-    background-color: var(--color-1);
+    background-color: #000;
     color: white;
     padding: 8rem 0;
 }
@@ -33,7 +33,7 @@
 
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-top: 4rem;
 }
@@ -41,13 +41,19 @@
 .benefit-card {
     aspect-ratio: 1;
     position: relative;
-    background: var(--color-2); /* Using the site's turquoise color */
+    background: var(--color-1); /* Using the site's turquoise color */
+    
     border-radius: 20px;
     padding: 2rem;
     overflow: hidden;
     transition: all 0.5s ease;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     animation: float 6s ease-in-out infinite;
+}
+.benefits-list p,
+.benefits-list h4,
+.category-title {
+    color: black;
 }
 
 /* Responsive grid adjustments */
@@ -98,6 +104,7 @@
     justify-content: center;
     position: relative;
     z-index: 2;
+    color: black;
 }
 
 .benefit-hover {
